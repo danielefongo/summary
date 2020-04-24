@@ -17,5 +17,5 @@ module.exports = function(loader, toggl, timeSlotter, asker, config) {
 }
 
 async function chooseGranularity(asker) {
-  return asker.inquire('Select granularity', 'list', ['day', 'week', 'month', 'year'])
+  return asker.list('Select granularity', ['day', 'week', 'month', 'year'])
 }
